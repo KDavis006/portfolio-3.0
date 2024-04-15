@@ -1,20 +1,22 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
+import Link from "next/link";
 
-const people = ["Home", "Resume", "Projects"];
-
-const listItems = people.map((person) => (
-  <li className="px-3 py-2 cursor-pointer rounded hover:bg-sky-100">
-    {person}
-  </li>
-));
 function Nav() {
+  const people = [["Home", ""], ["Resume", "Resume"], ["Projects", "Portfolio"]];
+  
+  const listItems = people.map((person) => (
+    <li className="px-3 py-2 bg-black cursor-pointer">
+      <Link href={`/${person[1]}`}>{person[0]}</Link>
+    </li>
+  ));
   
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <div className="container relative m-auto p-3 flex justify-between items-center">
       <h1 className="font-xl font-bold text-sky-800">Portfolio</h1>

@@ -19,9 +19,9 @@ function Nav() {
 
   return (
     <div className="container relative m-auto p-3 flex justify-between items-center">
-      <h1 className="font-xl font-bold text-sky-800">Portfolio</h1>
+      <h1 className="font-xl font-bold text-white">Portfolio</h1>
       <nav className={isOpen ? ("flex") : (" hidden md:flex")}>
-        <ul className="flex absolute md:relative flex-col md:flex-row w-full shadow md:shadow-none text-center top-12 left-0 md:top-0 md:flex bg-transparent text-sky-800">{listItems}</ul>
+        <ul className="flex absolute md:relative flex-col md:flex-row w-full shadow md:shadow-none text-center top-12 left-0 md:top-0 md:flex bg-transparent text-white">{listItems}</ul>
       </nav>
       <div className="md:hidden">
         <button className="flex justify-center items-center " onClick={toggleNavbar}>

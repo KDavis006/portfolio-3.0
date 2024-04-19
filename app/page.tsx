@@ -1,13 +1,21 @@
 "use client";
 import { useEffect } from 'react'
 import Nav from "./Components/Navbar/Nav";
+import CarouselSlider from './Components/Carousel/CarouselSlider';
 import Image from "next/image";
 import AOS from 'aos';
 
+
 export default function Home() {
+
+
+
   useEffect(() => {
      AOS.init({once: false})
   }, [])
+
+
+
   return (
     <div className="bg-black">
       <header className="bg-black shadow">
@@ -34,8 +42,15 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+
+        <h1 className="text-4xl text-center">My Achievments</h1>
+        <div className="h-screen items-center justify-center flex">
+          <div data-aos="fade-up" data-aos-duration="1000" data-delay="1500" className="flex flex-row justify-evenly h-2/3 w-4/5 bg-black bg-opacity-60">
+            <CarouselSlider />
+          </div>
+        </div>
       </main>
     </div>
-    
   );
 }

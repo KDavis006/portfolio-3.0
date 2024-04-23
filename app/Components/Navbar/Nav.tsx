@@ -3,15 +3,15 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 function Nav() {
-  const people = [
+  const buttons = [
     ['Home', ''],
     ['Resume', 'Resume'],
     ['Projects', 'Portfolio'],
   ];
 
-  const listItems = people.map((person) => (
+  const listItems = buttons.map((button) => (
     <li className='px-3 py-2 bg-black cursor-pointer'>
-      <Link href={`/${person[1]}`}>{person[0]}</Link>
+      <Link href={`/${button[1]}`}>{button[0]}</Link>
     </li>
   ));
 

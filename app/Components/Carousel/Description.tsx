@@ -18,12 +18,14 @@ const Description = ({ activeImage, clickNext, clickPrev }: Props) => {
           key={idx}
           className={`${
             idx === activeImage
-              ? 'block h-[40rem] py-20 px-10 text-center'
+              ? 'block h-[25rem] md:h-[40rem] py-5 sm:py-10 md:py-20 px-10 text-center'
               : 'hidden'
           }`}
         >
-          <div className='py-16 text-5xl font-extrabold'>{elem.title}</div>
-          <div className=' font-medium text-base tracking-wide italic text-gray-600'>
+          <div className='py-8 sm:py-16 text-5xl font-extrabold'>
+            {elem.title}
+          </div>
+          <div className=' font-medium text-sm sm:text-base tracking-wide italic text-gray-600'>
             {' '}
             {elem.desc}
           </div>

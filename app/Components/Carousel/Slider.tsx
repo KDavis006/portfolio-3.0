@@ -20,14 +20,14 @@ const Slider = () => {
       : setActiveImage(activeImage - 1);
   };
 
-  //   useEffect(() => {
-  //     const timer = setTimeout(() => {
-  //       clickNext();
-  //     }, 5000);
-  //     return () => {
-  //       clearTimeout(timer);
-  //     };
-  //   }, [activeImage]);
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        clickNext();
+      }, 5000);
+      return () => {
+        clearTimeout(timer);
+      };
+    }, [activeImage]);
   return (
     <main className='grid place-items-center md:grid-cols-2 md:h-1/3 grid-cols-1 w-full mx-auto max-w-5xl shadow-2xl'>
       <div
@@ -38,7 +38,7 @@ const Slider = () => {
             key={idx}
             className={`${
               idx === activeImage
-                ? 'block h-[40rem] object-cover transition-all duration-500 ease-in-out'
+                ? 'block h-[25rem] md:h-[40rem] object-cover transition-all duration-500 ease-in-out'
                 : 'hidden'
             }`}
           >
@@ -47,7 +47,7 @@ const Slider = () => {
               alt=''
               width={400}
               height={400}
-              className='w-full h-full object-cover md:rounded-tl-3xl md:rounded-bl-3xl'
+              className='w-full h-full object-cover'
             />
           </div>
         ))}

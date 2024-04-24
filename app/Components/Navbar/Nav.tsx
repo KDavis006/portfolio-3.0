@@ -22,7 +22,7 @@ function Nav() {
   };
 
   return (
-    <div className='container fixed m-auto p-3 flex justify-between items-center w-screen z-10'>
+    <div className='container fixed m-auto p-3 flex justify-between items-center z-10'>
       <h1 className='text-2xl md:text-2xl sm:text-base font-bold text-white'>
         Portfolio
       </h1>

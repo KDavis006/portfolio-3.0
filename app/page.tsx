@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <div className='h-full bg-[url("../public/BackgroundOne.svg")'>
-      <header className='bg-black shadow w-screen'>
+      <header className='bg-black shadow w-full'>
         <Nav />
       </header>
       <div className='flex justify-center items-center h-screen'>
@@ -56,7 +56,7 @@ export default function Home() {
           >
             <h1 className='text-4xl text-center'>About Me</h1>
             <div className='w-full flex justify-center'>
-              <h4 className='text-center w-4/6 xl:text-xl lg:text-lg sm:text-base  text-sm'>
+              <h4 className='text-center w-4/6 xl:text-xl lg:text-lg sm:text-base text-sm'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Architecto recusandae consequuntur aut quae id incidunt ea, odio
                 necessitatibus atque harum consequatur nihil eum eius dolore

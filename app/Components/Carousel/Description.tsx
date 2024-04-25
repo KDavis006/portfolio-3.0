@@ -1,7 +1,7 @@
 import React from 'react';
 import { images } from './constants';
-import left from '../../../public/left.svg';
-import right from '../../../public/right.svg';
+import left from '../../../public/left2.svg';
+import right from '../../../public/right2.svg';
 import Image from 'next/image';
 
 type Props = {
@@ -31,7 +31,7 @@ const Description = ({ activeImage, clickNext, clickPrev }: Props) => {
           </div>
           <div className='absolute md:bottom-1 bottom-10 right-10 md:right-0 w-full flex justify-center items-center'>
             <div
-              className='absolute bottom-2 right-10 cursor-pointer'
+              className='absolute bottom-2 right-10 cursor-pointer text'
               onClick={clickPrev}
             >
               <Image src={left} alt='' />

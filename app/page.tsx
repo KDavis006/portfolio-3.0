@@ -18,7 +18,7 @@ export default function Home() {
       </header>
       <div className='flex justify-center items-center h-screen'>
         <div className='text-center'>
-          <h1 className='mb-4 text-7xl text-gray-900 dark:text-white md:text-8xl lg:text-9xl'>
+          <h1 className='mb-4 text-6xl text-gray-900 dark:text-white md:text-8xl lg:text-9xl'>
             <span className='text-transparent bg-clip-text bg-gradient-to-r bg-white text-center'>
               Portfolio
             </span>
@@ -35,13 +35,13 @@ export default function Home() {
         <div
           data-aos='fade-up'
           data-aos-duration='1000'
-          data-delay='1500'
+          data-delay='500'
           className='flex flex-col md:flex-row md:content-center md:justify-center justify-evenly h-2/3 w-4/5 bg-black bg-opacity-60'
         >
           <div className='flex justify-center w-full'>
             <Image
               data-aos='fade-right'
-              data-aos-duration='1000'
+              data-aos-duration='3000'
               src='/businessman.webp'
               alt='Proffesional photo'
               className='w-[20rem] h-[20rem] md:w-[30rem] md:h-[30rem]'

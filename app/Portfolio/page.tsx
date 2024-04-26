@@ -7,9 +7,7 @@ const page = () => {
       <header className='bg-black shadow'>
         <Nav />
       </header>
-      <main>
-        <Carousel></Carousel>
-      </main>
+      <main></main>
     </div>
   );
 };
